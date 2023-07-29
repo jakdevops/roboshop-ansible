@@ -4,12 +4,12 @@
 
 - name: clean up the old  app content
   ansible.builtin.file:
-    name: /app
+    path: /app
     state: absent
 
 - name: create the application directory
   ansible.builtin.file:
-    name: /app
+    path: /app
     state: directory
 
 - name: download the application content
