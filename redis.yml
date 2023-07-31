@@ -14,7 +14,7 @@
     - name: install redis
       ansible.builtin.yum:
         name: redis
-        state: started
+        state: installed
 
     - name: update listener address /etc/redis.conf
       ansible.builtin.replace:
