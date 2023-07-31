@@ -5,7 +5,7 @@
     - name: install redis repo software.
       ansible.builtin.yum:
         name:  https://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
-      state: installed
+        state: installed
 
     - name: enable redis module
       ansible.builtin.shell: yum module enable redis:remi-6.2 -y
