@@ -1,0 +1,16 @@
+- name: user setup
+  hosts: all
+  become: true
+  vars:
+    component = user
+  tasks:
+    - name: component
+
+
+
+
+component=user
+schema_setup=mongodb
+source common.sh
+
+func_nodejs
