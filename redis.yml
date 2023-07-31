@@ -17,7 +17,7 @@
 
     - name: update listener address /etc/redis.conf
       ansible.builtin.replace:
-        path: /etc/redis.conf /etc/redis/redis.conf
+        path: /etc/redis.conf
         regexp: '127.0.0.1'
         replace: '0.0.0.0'
 
