@@ -4,7 +4,7 @@
   tasks:
     - name: install redis repo software.
       ansible.builtin.yum:
-        name:
+        name: https://rpms.remirepo.net/enterprise/remi-release-8.rpm
         state: installed
 
     - name: enable redis module
